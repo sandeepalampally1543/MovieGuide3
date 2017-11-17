@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="145dp">
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/student_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingTop="15dp"
+        android:src="@drawable/divya"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divya"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/student_name"
+        />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

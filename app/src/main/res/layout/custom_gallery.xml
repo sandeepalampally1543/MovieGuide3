@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/divyaa"
+        android:id="@+id/circleImageView2" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/circleImageView2"
+        android:layout_alignTop="@+id/circleImageView2"
+        android:text="Krupa added 12 photos to the album"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <HorizontalScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:id="@+id/horizontalscrollview"
+        android:layout_toRightOf="@+id/circleImageView2"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal1"
+                android:id="@+id/image1"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal2"
+                android:id="@+id/image2"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal3"
+                android:id="@+id/image3"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal4"
+                android:id="@+id/image4"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal6"
+                android:id="@+id/image5"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal7"
+                android:id="@+id/image6"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal8"
+                android:id="@+id/image7"/>
+            <ImageView
+                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:src="@drawable/gal1"
+                android:id="@+id/image8"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/circleImageView2"
+        android:layout_alignStart="@+id/circleImageView2"
+        android:layout_below="@+id/horizontalscrollview"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Like" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toRightOf="@+id/btn"
+        android:text="0"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="170dp"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

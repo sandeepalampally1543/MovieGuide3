@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="easyway.com.movieguide.activity.SubjectInformation">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:id="@+id/include" />
+
+    <TextView
+        android:id="@+id/select_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/include"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:text="Select Class"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/class_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/select_class"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp" />
+
+    <view
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/class_spinner"
+        android:id="@+id/view"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/select_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_class"
+        android:layout_alignStart="@+id/select_class"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="10dp"
+        android:text="Select Section"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <Spinner
+        android:id="@+id/section_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/select_section"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp" />
+
+    <view
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/section_spinner"
+        android:id="@+id/view1"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/select_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_section"
+        android:layout_alignStart="@+id/select_section"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="14dp"
+        android:text="Select subject"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/subject_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/select_subject"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp" />
+
+    <view
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/subject_spinner"
+        android:id="@+id/view2"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="start"
+        android:hint="@string/description"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/select_subject"
+        android:layout_alignStart="@+id/select_subject"
+        android:layout_below="@+id/desc"
+        android:layout_marginTop="10dp"
+        android:text="Add Attachment"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/attach_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/attach"
+        android:layout_alignEnd="@+id/desc"
+        android:layout_alignRight="@+id/desc"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/attachment"
+        />
+
+    <EditText
+        android:id="@+id/from_date"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/attach"
+        android:layout_alignStart="@+id/attach"
+        android:layout_below="@+id/attach"
+        android:layout_marginTop="10dp"
+        android:hint="@string/from_date"
+         />
+
+    <EditText
+        android:id="@+id/to_date"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/from_date"
+        android:layout_alignBottom="@+id/from_date"
+        android:layout_alignLeft="@+id/subject_spinner"
+        android:layout_alignStart="@+id/subject_spinner"
+        android:hint="@string/to_date"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/subject_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Submit" />
+
+</RelativeLayout>
